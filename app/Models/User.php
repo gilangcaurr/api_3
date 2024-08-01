@@ -44,5 +44,8 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }  
+    public function berita() {
+        return $this->hasMany(Berita::class, 'id_user');
     }
 }
