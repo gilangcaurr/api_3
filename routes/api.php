@@ -28,3 +28,4 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::resource('berita', BeritaController::class)->except('edit', 'create');
     Route::post('logout', [AuthController::class, 'logout']);
 });
+// mengubah
